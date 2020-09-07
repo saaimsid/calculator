@@ -1,0 +1,28 @@
+.numberButton{
+    border: 1px outset;
+    background-color: rgb(204, 204, 204);
+    height:50px;
+    width:50px;
+    cursor:pointer;
+}
+.opButton{
+    border: 1px outset;
+    background-color: rgb(53, 52, 52);
+    color: white;
+    height:50px;
+    width:50px;
+    cursor:pointer;
+}
+input{
+    border: 1px outset;
+    background-color: rgb(204, 204, 204);
+    height:50px;
+    width:375px;
+}
+.Button{
+    border: 1px outset;
+    background-color: rgb(53, 52, 52);
+    color: white;
+    height:50px;
+    width:375px;
+}

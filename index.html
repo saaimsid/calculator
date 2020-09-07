@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <table >
+        <tr><td colspan=7> <input id="inputtext" type="text" ></td></tr>
+        <tr>
+            <td><button id="n7" onclick="appendString(7)" class="numberButton">7</button></td>
+            <td><button id="n8" onclick="appendString(8)" class="numberButton">8</button></td>
+            <td><button id="n9" onclick="appendString(9)" class="numberButton">9</button></td>
+            <td><button id="op+" onclick="appendString('+')" class="opButton">+</button></td>
+            <td><button id="op^" onclick="appendString('^')" class="opButton">^</button></td>
+            <td><button id="signChangeButton" onclick="unary('-1')" class="opButton">(-1)</button></td>
+            <td><button id="back" onclick="backspace()" class="opButton">&larr;</button></td>
+        </tr>
+        <tr>
+            <td><button id="n4" onclick="appendString(4)" class="numberButton">4</button></td>
+            <td><button id="n5" onclick="appendString(5)" class="numberButton">5</button></td>
+            <td><button id="n6" onclick="appendString(6)" class="numberButton">6</button></td>
+            <td><button id="op-" onclick="appendString('-')" class="opButton">-</button></td>
+            <td><button id="sinButton" onclick="unary('sin')" class="opButton">sin</button></td>
+            <td><button id="cosButton" onclick="unary('cos')" class="opButton">cos</button></td>
+            <td><button id="tanButton" onclick="unary('tan')" class="opButton">tan</button></td>
+        </tr>
+        <tr>
+            <td><button id="n1" onclick="appendString(1)" class="numberButton">1</button></td>
+            <td><button id="n2" onclick="appendString(2)" class="numberButton">2</button></td>
+            <td><button id="n3" onclick="appendString(3)" class="numberButton">3</button></td>
+            <td><button id="opx" onclick="appendString('x')" class="opButton">x</button></td>
+            <td><button id="logButton" onclick="unary('log')" class="opButton">log</button></td>
+            <td><button id="pow2Button" onclick="unary('pow2')" class="opButton">x<sup>2</sup></button></td>
+            <td><button id="sqrtButton" onclick="unary('sqrt')" class="opButton">√</button></td>
+        </tr>
+        <tr>
+            <td><button id="decimalButton" onclick="decimal()" class="numberButton">.</button></td>
+            <td><button id="n0" onclick="appendString(0)" class="numberButton">0</button></td>
+            <td><button id="op=" onclick="result()" class="numberButton">=</button></td>
+            <td><button id="op/" onclick="appendString('/')" class="opButton">/</button></td>
+            <td><button id="op%" onclick="appendString('%')" class="opButton">%</button></td>
+            <td><button id="factButton" onclick="unary('!')" class="opButton">!</button></td>
+            <td><button id="invertButton" onclick="unary('invert')" class="opButton">1/x</button></td>
+        </tr>
+        <tr><td colspan=7><button id="clearButton" onclick="allClear()" class="Button">Clear All</button></td></tr>
+    </table>
+</body>
+</html>
